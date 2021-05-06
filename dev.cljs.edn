@@ -1,0 +1,5 @@
+^{:watch-dirs ["src/cljs"]
+  :css-dirs ["resources/public/css"]
+  :ring-handler start-figwheel-uix.server/handler}
+
+{:main start-figwheel-uix.core}

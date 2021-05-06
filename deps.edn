@@ -1,0 +1,14 @@
+{:paths ["src/clj" "src/cljs" "resources" "target"]
+ :deps
+ {org.clojure/clojure {:mvn/version "1.10.3"}
+  org.clojure/clojurescript {:mvn/version "1.10.844"}
+  com.bhauman/figwheel-main {:mvn/version "0.2.13"}
+
+  compojure/compojure {:mvn/version "1.6.1"}
+
+  uix.core/uix.core {:deps/root "core"
+                     :git/url "https://github.com/roman01la/uix.git"
+                     :sha "0da33eef38a7122be226b9b9a8ae0b5431b6b5d3"}
+  uix.dom/uix.dom {:deps/root "dom"
+                   :git/url "https://github.com/roman01la/uix.git"
+                   :sha "0da33eef38a7122be226b9b9a8ae0b5431b6b5d3"}}}
