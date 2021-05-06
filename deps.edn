@@ -3,6 +3,7 @@
  {org.clojure/clojure {:mvn/version "1.10.3"}
   org.clojure/clojurescript {:mvn/version "1.10.844"}
   com.bhauman/figwheel-main {:mvn/version "0.2.13"}
+  devcards/devcards {:mvn/version "0.2.7"}
 
   compojure/compojure {:mvn/version "1.6.1"}
 

@@ -1,6 +1,9 @@
 (ns ^:figwheel-hooks start-figwheel-uix.core
-  (:require [uix.core.alpha :as uix]
-            [uix.dom.alpha :as uix.dom]))
+  (:require [devcards.core :refer [defcard]]
+            [uix.core.alpha :as uix]
+            [uix.dom.alpha :as uix.dom])
+
+  (:require-macros [devcards.core :refer [defcard]]))
 
 (defn button [{:keys [on-click]} text]
   [:button.btn {:on-click on-click}
@@ -22,3 +25,7 @@
 
 (defn ^:after-load re-render []
   (mount))
+
+(defcard app
+  (uix/as-element
+   [app]))
